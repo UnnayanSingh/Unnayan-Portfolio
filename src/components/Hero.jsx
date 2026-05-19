@@ -1,6 +1,7 @@
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import profileImg from "../assets/image.jpeg";
 
 function Hero() {
   return (
@@ -108,10 +109,10 @@ function Hero() {
         <div className="w-72 h-72 md:w-96 md:h-96 rounded-full bg-gradient-to-r from-yellow-400 to-cyan-500 blur-3xl opacity-20 absolute"></div>
 
         <img
-          src="src/assets/image.jpeg"
-          alt="profile"
-          className="relative w-72 md:w-96 rounded-full border-4 border-cyan-400 shadow-2xl hover:scale-105 transition duration-500"
-        />
+        src={profileImg}
+        alt="Unnayan Singh"
+        className="relative w-72 md:w-96 rounded-full border-4 border-cyan-400 shadow-2xl hover:scale-105 transition duration-500"
+    />
 
       </motion.div>
 
