@@ -12,7 +12,7 @@ import Experience from "./components/Experience";
 
 function App() {
   return (
-    <div className="bg-white dark:bg-slate-950 text-black dark:text-white overflow-x-hidden transition duration-300">
+    <div className="bg-slate-950 text-white overflow-x-hidden min-h-screen">
 
       {/* SCROLL PROGRESS */}
       <ScrollProgress />
@@ -28,7 +28,7 @@ function App() {
 
       {/* EXPERIENCE */}
       <Experience />
-      
+
       {/* SKILLS */}
       <Skills />
 

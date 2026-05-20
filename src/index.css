@@ -6,8 +6,8 @@ html {
   scroll-behavior: smooth;
 }
 
-body{
-  margin:0;
-  padding:0;
-  font-family:sans-serif;
+body {
+  background: #020617;
+  color: white;
+  font-family: 'Poppins', sans-serif;
 }
