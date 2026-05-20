@@ -66,8 +66,7 @@ function Contact() {
             </h3>
 
             <p className="text-gray-300 leading-8 mb-10">
-              I’m actively looking for Software Engineer,
-              Frontend Developer and Internship opportunities.
+              I’m actively seeking opportunities for Software Engineer, Frontend Developer, and Internship roles.
               Feel free to connect with me.
             </p>
 

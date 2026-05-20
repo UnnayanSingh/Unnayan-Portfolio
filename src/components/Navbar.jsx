@@ -2,8 +2,6 @@ import { useState, useEffect } from "react";
 import {
   FaBars,
   FaTimes,
-  FaMoon,
-  FaSun,
 } from "react-icons/fa";
 
 function Navbar() {
@@ -12,22 +10,6 @@ function Navbar() {
 
   const [activeSection, setActiveSection] =
     useState("home");
-
-  const [darkMode, setDarkMode] = useState(() => {
-    return localStorage.getItem("theme") !== "light";
-  });
-
-  useEffect(() => {
-
-    if (darkMode) {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
-
-  }, [darkMode]);
 
   /* ACTIVE SECTION TRACKING */
   useEffect(() => {
@@ -70,20 +52,20 @@ function Navbar() {
   const navLink = (section) =>
     activeSection === section
       ? "text-yellow-500 font-semibold"
-      : "hover:text-yellow-500 transition";
+      : "hover:text-yellow-500 transition duration-300";
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white/70 dark:bg-slate-950/80 backdrop-blur-md z-50 border-b border-black/10 dark:border-white/10 transition duration-300">
+    <nav className="fixed top-0 left-0 w-full bg-slate-950/80 backdrop-blur-md z-50 border-b border-white/10 transition duration-300">
 
       <div className="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
 
         {/* LOGO */}
-        <h1 className="text-2xl font-bold text-yellow-500">
+        <h1 className="text-2xl font-bold text-yellow-500 cursor-pointer">
           Unnayan
         </h1>
 
         {/* DESKTOP MENU */}
-        <ul className="hidden md:flex gap-10 text-lg text-black dark:text-white">
+        <ul className="hidden md:flex gap-8 text-lg text-white items-center">
 
           <li>
             <a href="#home" className={navLink("home")}>
@@ -98,8 +80,20 @@ function Navbar() {
           </li>
 
           <li>
+            <a href="#experience" className={navLink("experience")}>
+              Experience
+            </a>
+          </li>
+
+          <li>
             <a href="#skills" className={navLink("skills")}>
               Skills
+            </a>
+          </li>
+
+          <li>
+            <a href="#certificates" className={navLink("certificates")}>
+              Certificates
             </a>
           </li>
 
@@ -117,28 +111,13 @@ function Navbar() {
 
         </ul>
 
-        {/* RIGHT SIDE */}
-        <div className="flex items-center gap-5">
+        {/* MOBILE MENU BUTTON */}
+        <div
+          className="md:hidden text-2xl cursor-pointer text-white"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
 
-          {/* THEME TOGGLE */}
-          <button
-            onClick={() => setDarkMode(!darkMode)}
-            className="text-xl text-black dark:text-white hover:text-yellow-500 transition"
-          >
-
-            {darkMode ? <FaSun /> : <FaMoon />}
-
-          </button>
-
-          {/* MOBILE MENU BUTTON */}
-          <div
-            className="md:hidden text-2xl cursor-pointer text-black dark:text-white"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-
-            {menuOpen ? <FaTimes /> : <FaBars />}
-
-          </div>
+          {menuOpen ? <FaTimes /> : <FaBars />}
 
         </div>
 
@@ -147,9 +126,9 @@ function Navbar() {
       {/* MOBILE MENU */}
       {menuOpen && (
 
-        <div className="md:hidden bg-white dark:bg-slate-900 border-t border-black/10 dark:border-white/10 px-6 py-6 transition duration-300">
+        <div className="md:hidden bg-slate-900 border-t border-white/10 px-6 py-6 transition duration-300">
 
-          <ul className="flex flex-col gap-6 text-lg text-black dark:text-white">
+          <ul className="flex flex-col gap-6 text-lg text-white">
 
             <li>
               <a
@@ -173,11 +152,31 @@ function Navbar() {
 
             <li>
               <a
+                href="#experience"
+                onClick={() => setMenuOpen(false)}
+                className={navLink("experience")}
+              >
+                Experience
+              </a>
+            </li>
+
+            <li>
+              <a
                 href="#skills"
                 onClick={() => setMenuOpen(false)}
                 className={navLink("skills")}
               >
                 Skills
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#certificates"
+                onClick={() => setMenuOpen(false)}
+                className={navLink("certificates")}
+              >
+                Certificates
               </a>
             </li>
 

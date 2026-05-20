@@ -7,6 +7,8 @@ import GitHubStats from "./components/GitHubStats";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ScrollProgress from "./components/ScrollProgress";
+import Certificates from "./components/Certificates";
+import Experience from "./components/Experience";
 
 function App() {
   return (
@@ -24,8 +26,14 @@ function App() {
       {/* ABOUT */}
       <About />
 
+      {/* EXPERIENCE */}
+      <Experience />
+      
       {/* SKILLS */}
       <Skills />
+
+      {/* CERTIFICATES */}
+      <Certificates />
 
       {/* PROJECTS */}
       <Projects />

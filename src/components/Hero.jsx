@@ -42,9 +42,7 @@ function Hero() {
         />
 
         <p className="text-gray-300 mt-8 leading-8 text-lg">
-          Passionate Software Engineer focused on building responsive,
-          user-friendly and modern web applications using React,
-          JavaScript and frontend technologies.
+          Passionate about creating modern, scalable and user-friendly web applications with clean design and seamless user experiences.
         </p>
 
         {/* BUTTONS */}
