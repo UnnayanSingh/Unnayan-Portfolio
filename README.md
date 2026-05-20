@@ -130,7 +130,7 @@ npm run build
 
 ## 🔗 Live Portfolio
 
-[https://your-vercel-link.vercel.app/](https://unnayansingh.vercel.app/)
+[Live Portfolio - Unnayan Singh](https://unnayansingh.vercel.app/)
 
 ---
 
