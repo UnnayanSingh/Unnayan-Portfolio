@@ -1,27 +1,32 @@
-# Unnayan Portfolio
+# Unnayan Singh Portfolio
 
-A modern and fully responsive developer portfolio built using React.js, Tailwind CSS, Framer Motion and EmailJS. The portfolio showcases my projects, technical skills, certifications and experience with interactive UI animations, dark mode support, GitHub API integration and a working contact form.
+A modern and fully responsive developer portfolio built using React.js, Tailwind CSS, Framer Motion and EmailJS. The portfolio showcases my projects, technical skills, certifications, experience and GitHub activity with smooth animations and a modern dark-themed UI.
 
 ---
 
 ## 🚀 Features
 
 - Modern Responsive UI Design
-- Dark / Light Mode Toggle
-- Animated Sections using Framer Motion
-- Scroll Progress Indicator
-- Active Navigation Highlight
-- GitHub API Integration
+- Animated Hero Section
+- About Me Section
+- Experience Timeline
+- Skills Showcase
+- Certifications Section
+- Interactive Project Showcase
+- GitHub Statistics Integration
 - Functional Contact Form using EmailJS
+- Smooth Animations using Framer Motion
 - Mobile Responsive Navbar
 - Smooth Scrolling Experience
-- Interactive Project Showcase
+- Fully Responsive Design
+- Modern Dark Theme Interface
 
 ---
 
 ## 🛠 Tech Stack
 
 ### Frontend
+
 - React.js
 - JavaScript (ES6)
 - Tailwind CSS
@@ -29,6 +34,7 @@ A modern and fully responsive developer portfolio built using React.js, Tailwind
 - CSS3
 
 ### Libraries & Tools
+
 - Framer Motion
 - React Icons
 - EmailJS
@@ -46,11 +52,16 @@ portfolio/
 │
 ├── src/
 │   ├── assets/
+│   │   ├── certificates/
+│   │   └── image.jpeg
+│   │
 │   ├── components/
 │   │   ├── Navbar.jsx
 │   │   ├── Hero.jsx
 │   │   ├── About.jsx
+│   │   ├── Experience.jsx
 │   │   ├── Skills.jsx
+│   │   ├── Certificates.jsx
 │   │   ├── Projects.jsx
 │   │   ├── GitHubStats.jsx
 │   │   ├── Contact.jsx
@@ -61,11 +72,25 @@ portfolio/
 │   ├── index.css
 │   └── main.jsx
 │
+├── .gitignore
 ├── package.json
 ├── vite.config.js
 ├── tailwind.config.js
 └── README.md
 ```
+
+---
+
+## 📸 Sections Included
+
+- Home
+- About
+- Experience
+- Skills
+- Certifications
+- Projects
+- GitHub Stats
+- Contact
 
 ---
 
@@ -103,6 +128,12 @@ npm run build
 
 ---
 
+## 🔗 Live Portfolio
+
+https://your-vercel-link.vercel.app/
+
+---
+
 ## 📧 Contact
 
 - Email: unnayansingh2005@gmail.com
@@ -113,6 +144,8 @@ npm run build
 
 ## 👨‍💻 Author
 
-Unnayan Singh
+### Unnayan Singh
 
-Computer Science & Engineering (Cybersecurity) Student passionate about Full-Stack Development, Frontend Engineering and Modern Web Technologies.
+Computer Science & Engineering (Cybersecurity) student passionate about Software Engineering, Frontend Development and Modern Web Technologies.
+
+---
