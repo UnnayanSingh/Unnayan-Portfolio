@@ -6,10 +6,6 @@ function Footer() {
         © 2026 Unnayan Singh. All Rights Reserved.
       </p>
 
-      <p className="mt-3 text-sm">
-        Built with React, Tailwind CSS & Framer Motion
-      </p>
-
     </footer>
   );
 }
