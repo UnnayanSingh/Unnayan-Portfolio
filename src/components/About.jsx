@@ -33,25 +33,15 @@ function About() {
 >
 
   <p className="text-gray-300 leading-9 text-lg">
-    I am a final year Computer Science and Engineering student
-    specializing in Cybersecurity with a strong interest in
-    full-stack development, frontend technologies and modern
-    web applications.
+    I am a final-year Computer Science and Engineering student specializing in Cybersecurity with a strong interest in software development, cloud technologies, IT infrastructure and modern computing solutions.
   </p>
 
   <p className="text-gray-300 leading-9 text-lg mt-8">
-    I have hands-on experience with React.js, JavaScript,
-    Python, MySQL, Flask and GitHub. Through projects like
-    HushImage, NoteShelf and DoMate, I have developed practical
-    skills in authentication systems, API integration,
-    responsive frontend development and secure application
-    design.
+    I have hands-on experience with React.js, JavaScript, Python, MySQL, Flask, GitHub and Oracle Cloud Infrastructure. Through projects such as HushImage, NoteShelf and SkyCast, I have developed practical skills in application development, database management, authentication systems, API integration, troubleshooting and secure software design.
   </p>
 
   <p className="text-gray-300 leading-9 text-lg mt-8">
-    I continuously explore new technologies and improve my
-    problem-solving abilities through real-world projects and
-    hands-on development experience.
+    I continuously explore new technologies and strengthen my problem-solving abilities through real-world projects, certifications and hands-on development experience. I am passionate about building reliable, secure and user-focused technology solutions while continuously learning and adapting to emerging technologies.
   </p>
 
 </motion.div>
